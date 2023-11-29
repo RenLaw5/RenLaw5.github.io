@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Laura Fuentes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Laura Fuentes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header id="menu">
+        <table>
+            <tr>
+                <td onclick="showContent('home')">Home</td>
+                <td onclick="showContent('about')">About</td>
+                <td onclick="showContent('skills')">Skills</td>
+                <td onclick="showContent('portfolio')">Portfolio</td>
+                <td onclick="showContent('contact')">Contact</td>
+            </tr>
+        </table>
+    </header>
+    <div id="home" class="content active-content">
+        <div id="info" class="main-content">
+            <p id="hello">Hello I'm</p>
+            <h1>Laura Fuentes</h1>
+            <h4>Software developer</h4>
+            <div id="contact_home">
+                <img alt="mail" src="images/mail.png" />
+                <p><a href="mailto:lfgutierrez0599@gmail.com">lfgutierrez0599@gmail.com</a></p>
+                <br/><br/>
+                <img alt="dir" src="images/location.png">
+                <p>Madrid, Spain</p>
+            </div>
+        </div>
+        <br/>
+        <div id="photo" class="secondary-content">
+            <img alt="my_photo" src="images/Mi_Foto.jpg">
+        </div>
+    </div>
+
+    <div id="about" class="content">
+        <div class="main-content">
+            <h1>Who am I?</h1>
+            <p>My name is Laura Fuentes, im a Spanish girl studying to become a software developer in Madrid.</p>
+            <p>My grades are an average of 9.8/10.</p>
+            <p>I love to improve my skills and work alongside with my coworkers.</p>
+            <p>I would like to focus my carrer on back-end work, but I am open to explore any offer.</p>
+            <p>Feel free to ask anything and check my work or skills.</p>
+        </div>
+    </div>
+
+    <div id="skills" class="content">
+        <div class="main-content">
+            <h1>Programming languages</h1>
+            <ul>
+                <li><img src="images/java.png" alt="java"> Java</li>
+                <li><img src="images/JavaScript_logo.png" alt="JavaScript"> JavaScript</li>
+                <li><img src="images/C.png" alt="c"> C</li>
+            </ul>
+            <h1>Web design</h1>
+            <ul>
+                <li><img src="images/HTML5.png" alt="HTML5"> HTML</li>
+                <li><img src="images/CSS3.png" alt="CSS3"> CSS</li>
+            </ul>
+        </div>
+        <div class="secondary-content">
+            <h1>Databases</h1>
+            <ul>
+                <li><img src="images/Oracle_SQL.png" alt="Oracle_SQL"> SQL Queries</li>
+                <li><img src="images/PLSQL.png" alt="PL/SQL"> PL/SQL</li>
+            </ul>
+            <h1>Languages</h1>
+            <ul id="lang">
+                <li><img src="images/bandera_espana.png" alt="Spain_flag"> Native Spanish</li>
+                <li><img src="images/bandera_uk.png" alt="UK_flag"> Medium-high English</li>
+                <li><img src="images/bandera_francia.jpg" alt="France_flag"> Basic French</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="portfolio" class="content">
+        <div class="main-content">
+            <h1>Feel free to check my work on GitHub</h1>
+            <a href="https://github.com/RenLaw5" target="_blank"><img src="images/github.png" alt="github"></a>
+        </div>
+        <div class="secondary-content">
+            <h1>You can also check my katas at Code Wars</h1>
+            <a href="https://www.codewars.com/users/RenLaw" target="_blank"><img src="images/CodeWars.svg" alt="codewars"></a>
+        </div>
+    </div>
+
+    <div id="contact" class="content">
+        <div class="main-content">
+            <h1>Mail</h1>
+            <p><a href="mailto:lfgutierrez0599@gmail.com">lfgutierrez0599@gmail.com</a></p>
+        </div>
+        <div class="secondary-content">
+        </div>
+    </div>
+</body>
+
+</html>
