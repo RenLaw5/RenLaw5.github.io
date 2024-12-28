@@ -2,103 +2,221 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Laura Fuentes">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Laura Fuentes</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+	<title>Portfolio Laura Fuentes</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Laura Fuentes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<!--CSS-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!--Script-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" />
+	<script src="assets/js/scripts.js"></script>
+
+	<!--
+			LINKS:
+			https://github.com/saurabhsonewane/gfg1.github.io/blob/main/index.html
+			https://saurabhsonewane.github.io/gfg1.github.io/
+			
+			Icon source: https://fonts.google.com/icons?icon.size=24&icon.color=%23e8eaed&icon.platform=web
+		-->
 </head>
 
 <body>
-    <header id="menu">
-        <table>
-            <tr>
-                <td onclick="showContent('home')">Home</td>
-                <td onclick="showContent('about')">About</td>
-                <td onclick="showContent('skills')">Skills</td>
-                <td onclick="showContent('portfolio')">Portfolio</td>
-                <td onclick="showContent('contact')">Contact</td>
-            </tr>
-        </table>
-    </header>
-    <div id="home" class="content active-content">
-        <div id="info" class="main-content">
-            <p id="hello">Hello I'm</p>
-            <h1>Laura Fuentes</h1>
-            <h4>Software developer</h4>
-            <div id="contact_home">
-                <img alt="mail" src="images/mail.png" />
-                <p><a href="mailto:lfgutierrez0599@gmail.com">lfgutierrez0599@gmail.com</a></p>
-                <br/><br/>
-                <img alt="dir" src="images/location.png">
-                <p>Madrid, Spain</p>
-            </div>
-        </div>
-        <br/>
-        <div id="photo" class="secondary-content">
-            <img alt="my_photo" src="images/Mi_Foto.jpg">
-        </div>
-    </div>
+	<div class="wrapper">
+		<!--Navigation Menu-->
+		<section id="navbar">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">Laura Fuentes</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav m-auto">
+							<li class="nav-item me-2">
+								<a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
+									<span class="material-icons-outlined me-2">home</span>
+									Index
+								</a>
+							</li>
+							<li class="nav-item me-2">
+								<a class="nav-link d-flex align-items-center" href="#about-me">
+									<span class="material-icons-outlined me-2">question_mark</span>
+									About me
+								</a>
+							</li>
+							<li class="nav-item me-2">
+								<a class="nav-link d-flex align-items-center" href="#technical-skills">
+									<span class="material-icons-outlined me-2">badge</span>
+									Technical Skills
+								</a>
+							</li>
+							<li class="nav-item me-2">
+								<a class="nav-link d-flex align-items-center" href="#experience">
+									<span class="material-icons-outlined me-2">business_center</span>
+									Experience
+								</a>
+							</li>
+							<li class="nav-item me-2">
+								<a class="nav-link d-flex align-items-center" href="#social-network">
+									<span class="material-icons-outlined me-2">groups</span>
+									Social Network
+								</a>
+							</li>
+							<li class="nav-item me-2">
+								<a class="nav-link d-flex align-items-center" href="#contact">
+									<span class="material-icons-outlined me-2">mail</span>
+									Contact
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</section>
 
-    <div id="about" class="content">
-        <div class="main-content">
-            <h1>Who am I?</h1>
-            <p>My name is Laura Fuentes, I'm a Spanish girl studying to become a software developer in Madrid.</p>
-            <p>I love to improve my skills and work alongside with my coworkers.</p>
-            <p>I would like to focus my carrer on back-end work, but I am open to explore any offer.</p>
-            <p>Feel free to ask anything and check my work or skills.</p>
-        </div>
-    </div>
+		<!--Main content-->
+		<header class="header" id="header">
+			<div class="container-fluid" id="banner-container">
+				<div class="row g-4 align-items-center" id="banner-row">
+					<div class="col-md-6 d-flex justify-content-center align-items-center text-center" id="banner-col1">
+						<div>
+							<h1>Laura Fuentes</h1>
+							<p>Junior Software Developer</p>
+							<div class="d-grid gap-2 d-md-flex justify-content-center">
+								<a class="btn btn-primary" href="assets/documents/CV_Laura_Fuentes.pdf" download
+									role="button">
+									Download my resume
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 d-flex justify-content-center" id="banner-col2">
+						<img class="img-fluid rounded" src="assets/images/My-photo.png" alt="My photo" />
+					</div>
+				</div>
+			</div>
+		</header>
 
-    <div id="skills" class="content">
-        <div class="main-content">
-            <h1>Programming languages</h1>
-            <ul>
-                <li><img src="images/java.png" alt="java"> Java</li>
-                <li><img src="images/JavaScript_logo.png" alt="JavaScript"> JavaScript</li>
-                <li><img src="images/C.png" alt="c"> C</li>
-            </ul>
-            <h1>Web design</h1>
-            <ul>
-                <li><img src="images/HTML5.png" alt="HTML5"> HTML</li>
-                <li><img src="images/CSS3.png" alt="CSS3"> CSS</li>
-            </ul>
-        </div>
-        <div class="secondary-content">
-            <h1>Databases</h1>
-            <ul>
-                <li><img src="images/Oracle_SQL.png" alt="Oracle_SQL"> SQL Queries</li>
-                <li><img src="images/PLSQL.png" alt="PL/SQL"> PL/SQL</li>
-            </ul>
-            <h1>Languages</h1>
-            <ul id="lang">
-                <li><img src="images/bandera_espana.png" alt="Spain_flag"> Native Spanish</li>
-                <li><img src="images/bandera_uk.png" alt="UK_flag"> Medium-high English</li>
-                <li><img src="images/bandera_francia.jpg" alt="France_flag"> Basic French</li>
-            </ul>
-        </div>
-    </div>
+		<!--Brief resume-->
+		<section class="about-me" id="about-me">
+			<div class="container">
+				<h2>
+					<span class="material-icons-outlined me-2">question_mark</span>
+					About me
+				</h2>
+				<p>
+					I'm a junior software developer with a passion for designing and building efficient,
+					user-friendly software solutions. With a strong foundation in both front-end and
+					back-end development, I specialize in delivering scalable code and customizing business
+					applications to meet unique needs.<br />
+					Passionate about technology and committed to continuous
+					improvement, I'm looking for an opportunity to apply my skills in a new professional
+					environment and contribute to the success of the team.
+				</p>
+			</div>
+		</section>
 
-    <div id="portfolio" class="content">
-        <div class="main-content">
-            <h1>Feel free to check my work on GitHub</h1>
-            <a href="https://github.com/RenLaw5" target="_blank"><img src="images/github.png" alt="github"></a>
-        </div>
-        <div class="secondary-content">
-            <h1>You can also check my katas at Code Wars</h1>
-            <a href="https://www.codewars.com/users/RenLaw" target="_blank"><img src="images/CodeWars.svg" alt="codewars"></a>
-        </div>
-    </div>
+		<!--Skills and others-->
+		<section class="technical-skills" id="technical-skills">
+			<div class="container">
+				<h2>
+					<span class="material-icons-outlined me-2">badge</span>
+					Technical Skills
+				</h2>
+				<ul>
+					<li><b>Programming languages: </b>Python, Java, kotlin, C#, C, JavaScript, HTML, CSS.</li>
+					<li><b>Databases: </b>SQL, SQLite, PostgreSQL, PL/SQL.</li>
+					<li><b>File format: </b>XML, JSON.</li>
+					<li><b>Tools: </b>Git, Bash, Odoo, Bootstrap, Selenium.</li>
+					<li><b>IDEs: </b>Eclipse, PyCharm, Android Studio, VS Code, Oracle db, Mongodb.</li>
+					<li><b>Languages: </b>Spanish, English.</li>
+					<li><b>Others: </b>Google suite.</li>
+				</ul>
+			</div>
+		</section>
 
-    <div id="contact" class="content">
-        <div class="main-content">
-            <h1>Mail</h1>
-            <p><a href="mailto:lfgutierrez0599@gmail.com">lfgutierrez0599@gmail.com</a></p>
-        </div>
-        <div class="secondary-content">
-        </div>
-    </div>
+		<!--Experience-->
+		<section class="experience" id="experience">
+			<div class="container">
+				<h2>
+					<span class="material-icons-outlined me-2">business_center</span>
+					Experience
+				</h2>
+				<div>
+					<div class="row">
+						<div class="col-md-6">
+							<h3>Work</h3>
+							<p>
+								<b>Odoo consultant, analyst and web designer</b><br />
+								<a href="https://www.beltranycriado.com" target="_blank">Beltrán y Criado, S.L.</a>
+							</p>
+							<ul>
+								<li>Development of personalized code on Odoo ERP</li>
+								<li>Analysis of business activities</li>
+								<li>SQL queries to visualize data</li>
+								<li>Migration from Odoo v15 to v17</li>
+								<li>Document customization</li>
+								<li>Server access and configuration</li>
+								<li>Odoo.sh maintenance</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<h3>Studies</h3>
+							<p>
+								<b>Vocational Studies on Multi-Device Software Development</b><br />
+								<a href="https://site.educa.madrid.org/ies.barajas.madrid/" target="_blank">IES
+									Barajas</a>
+							</p>
+							<ul>
+								<li>Learning OOP with Java</li>
+								<li>Front-end development with HTML/CSS/JavaScript</li>
+								<li>Mobile apps development with Java and Kotlin using Android Studio</li>
+								<li>Database management using Oracle DB</li>
+								<li>.NET application development with C#</li>
+								<li>Testing tools like Selenium with Java</li>
+								<li>Project management methodologies</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Social network-->
+		<section class="social-network" id="social-network">
+			<div class="container">
+				<h2>
+					<span class="material-icons-outlined me-2">groups</span>
+					Social Network
+				</h2>
+				<ul>
+					<li><a href="https://github.com/RenLaw5" target="_blank">GitHub</a></li>
+					<li><a href="https://www.linkedin.com/in/laura-fuentes-gutiérrez-6098062b5/"
+							target="_blank">LinkedIn</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!--Contact form-->
+		<section class="footer" id="footer">
+			<div class="container">
+				<h2 id="contact">
+					<span class="material-icons-outlined me-2">mail</span>
+					Contact
+				</h2>
+				<p>Feel free to send me a mail to <a
+						href="mailto:lfgutierrez0599@gmail.com">lfgutierrez0599@gmail.com</a></p>
+			</div>
+		</section>
+	</div>
 </body>
 
 </html>
