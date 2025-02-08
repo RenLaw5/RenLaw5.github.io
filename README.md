@@ -11,7 +11,7 @@ This project is my way to show what I've learnt as a presentation card in a simp
 3. [Used technologies](#used-technologies)
 4. [Project structure](#project-structure)
 5. [Contact](#contact)
-6. [License](#license)
+6. [License](#license) 
 
 ### Preview
 This project aims to show what I've learnt about responsive design and scalable software. 
@@ -19,13 +19,16 @@ This is also my first Bootstrap 5 project to learn the basis at the same time I 
 I hope you enjoy my work as much as I did working on it.
 
 ### Features
-
+- Can be displayed on any screen.
+- Has Light and Dark mode, set by default with user's browser configuration but can be manually changed.
+- Can be displayed in English and Spanish, also automatically set.
 
 ### Used technologies
 All this project technologies are pretty simple, I used only:
 
 - HTML for the structure of the web.
 - CSS to add some custom style.
+- JavaScript to customize some features.
 - Bootstrap5 to keep a responsive design and make it easy to visualize on any device.
 
 ### Project structure
@@ -34,12 +37,10 @@ All this project technologies are pretty simple, I used only:
     ├── assets/                     # Static resources
     │   ├── css/                    # Custom styles and Bootstrap
     │   ├── documents/              # Downloadable files
-    │   ├── fonts/                  # Font files
     │   ├── images/                 # Images
     │   └── js/                     # JavaScript files
-    ├── components/                 # Reusable HTML components
-    ├── pages/                      # Extra HTML pages
-    ├── tests/                      # Test files
+    ├── en/                         # English static html files
+    ├── es/                         # Spanish static html files
     ├── .gitignore                  # Ignored files or folders
     ├── index.html                  # Main page
     └── README.md                   # This File
@@ -50,6 +51,6 @@ If you like my work and want to keep in touch, feel free to contact me via e-mai
 You can also check my social network:
 
 - [GitHub](https://github.com/RenLaw5)
-- [LinkedIn](https://www.linkedin.com/in/laura-fuentes-gutiérrez-6098062b5/)
+- [LinkedIn](https://www.linkedin.com/in/laurafgdev/)
 
 ### License

@@ -1,70 +1,162 @@
-/*General styles*/
+/* Global variables */
+:root {
+	--padding-section-top: 40px;
+	--padding-section-bottom: 40px;
+	--padding-heading-bottom: 50px;
+	--padding-row-horizontal: 20px;
+	--padding-banner-top: 100px;
+	--padding-banner-bottom: 80px;
+	--margin-navbar-brand: 100px;
+	--margin-dark-mode-btn: 20px;
+
+	/* Light mode variables */
+	--bg-color: #fafafa;
+	--text-color: #000000;
+	--navbar-bg-color: #e4e5f1;
+	--navbar-text-color: #000000;
+	--btn-bg-color: #484b6a;
+	--btn-text-color: #fafafa;
+	--footer-bg-color: #484b6a;
+	--footer-text-color: #fafafa;
+	--global-btns-separator-color: #dee2e6;
+	/*https://www.color-hex.com/color-palette/106748*/
+}
+
+/* Dark mode variables */
+[data-bs-theme="dark"] {
+	--bg-color: #161722;
+	--text-color: #e4e5f1;
+	--navbar-bg-color: #25273c;
+	--navbar-text-color: #e4e5f1;
+	--btn-bg-color: #e4e5f1;
+	--btn-text-color: #161722;
+	--footer-bg-color: #25273c;
+	--footer-text-color: #e4e5f1;
+	--global-btns-separator-color: #cacde8;
+}
+
+/* Apply light / dark mode */
 body {
-	background-color: #0A2472;
-	color: white;
+	background-color: var(--bg-color);
+	color: var(--text-color);
 }
 
-/*Navbar*/
-.navbar-nav{
+.navbar {
+	background-color: var(--navbar-bg-color);
+	color: var(--navbar-text-color);
+}
+
+#btn-resume-download {
+	background-color: var(--btn-bg-color);
+	color: var(--btn-text-color);
+}
+
+#skills-list span:not(.material-symbols-outlined) {
+	background-color: var(--btn-bg-color);
+	color: var(--btn-text-color);
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+}
+
+a {
+	color: var(--text-color);
+	text-decoration: none;
+}
+
+/* Navbar */
+.navbar-nav {
 	margin-right: 0 !important;
-	padding-right: 100px;
+	padding-right: var(--padding-navbar-brand);
 }
 
-.navbar{
-	background-color: #00072D;
+.navbar-brand {
+	margin-left: var(--margin-navbar-brand);
 }
 
-.nav-item a{
-	color: white !important;
+#btnDarkMode {
+	padding-left: 0;
 }
 
-.navbar-brand{
-	color: white !important;
-	padding-left: 100px;
+.vertical-divider {
+	width: 1px;
+	height: 2.5rem;
+	background-color: var(--bs-gray-400);
+	margin: auto 1rem;
 }
 
-#navbar button{
-	background-color: white !important;
+@media (max-width: 992px) {
+	.global-buttons + .vertical-divider {
+		display: none;
+	}
+
+	.global-buttons::after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 1px;
+		margin: 1rem 0;
+		background-color: var(--global-btns-separator-color);
+	}
 }
 
-/*Banner*/
-#banner-container{
-	background-color: #051650;
-	color: white !important;
-	padding-top: 80px;
-	padding-bottom: 80px;
+/* Banner */
+#banner-container {
+	padding: var(--padding-banner-top) 0 var(--padding-banner-bottom);
 }
 
-#banner-row img{
+#banner-row {
+	margin: 0;
+}
+
+#banner-row img {
 	max-width: 50%;
 	height: auto;
 	object-fit: contain;
 	display: block;
-	padding-left: 30px;
 }
 
-#banner-row h1, p {
-	padding-left: 20px;
-	padding-top: 20px;
+#banner-row h1,
+#banner-row p,
+#banner-col1 {
+	padding-left: var(--padding-row-horizontal);
+	padding-top: var(--padding-row-horizontal);
 }
 
-#banner-row a{
-	background-color: white !important;
-	color: #00072D !important;
+#banner-row a {
 	border: none;
-	margin-left: 20px;
-	margin-top: 20px;
+	margin: var(--padding-row-horizontal) 0 0 var(--padding-row-horizontal);
 }
 
-#banner-col1{
-	padding-left: 20px;
+/* Section paddings */
+#about-me,
+#technical-skills,
+#experience,
+#footer {
+	padding: var(--padding-section-top) 0 var(--padding-section-bottom);
 }
 
-/*Links*/
-a:link {
-	color: white;
+#about-me h2,
+#technical-skills h2,
+#experience h2 {
+	padding-bottom: var(--padding-heading-bottom);
 }
 
-a:visited {
-	color: #80ffff;
+/* Specific styles */
+#experience h3 {
+	padding-bottom: 10px;
+}
+
+#footer {
+	background-color: var(--footer-bg-color);
+	color: var(--footer-text-color);
+	padding: 20px 0;
+}
+
+#footer a {
+	color: var(--footer-text-color);
+	text-decoration: none;
+}
+
+#footer a:hover {
+	text-decoration: underline;
 }
